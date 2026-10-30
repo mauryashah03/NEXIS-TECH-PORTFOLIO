@@ -25,7 +25,7 @@ a{color:inherit}a:focus-visible,button:focus-visible{outline:2px solid var(--ac)
 #gl{position:relative;flex:none;width:100%;height:clamp(260px,40vh,400px);z-index:0;pointer-events:none}
 .wrap{max-width:1160px;margin:0 auto;padding:0 24px;position:relative}
 main,header,footer{position:relative;z-index:1}
-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 70%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 96%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#14172a}.lg{display:block;flex:none}.bt{font:400 15px 'Michroma';letter-spacing:.16em;white-space:nowrap}.sand{background:var(--sand)}
 .proc{position:relative;overflow:hidden;background:linear-gradient(160deg,#1f2745,#121729);color:#f0e9d9;border-radius:22px;padding:34px;box-shadow:0 40px 70px -30px rgba(27,32,54,.6)}.proc .wmk{position:absolute;right:-24px;bottom:-24px;width:230px;opacity:.1}.proc h4{font:400 14px Michroma,sans-serif;margin:0 0 24px;color:#e7d4a4;letter-spacing:.04em;position:relative}.proc ol{list-style:none;margin:0;padding:0;border-left:1px solid #3a4268;position:relative}.proc li{padding:0 0 22px 24px;position:relative}.proc li:last-child{padding-bottom:0}.proc li:before{content:"";position:absolute;left:-5px;top:8px;width:9px;height:9px;border-radius:50%;background:#d6b676}.proc li b{display:block;font-weight:600;font-size:16px}.proc li span{color:#b4b8cc;font-size:14px}
@@ -77,6 +77,10 @@ section{padding:96px 0;background:var(--bg);color:var(--fg);border-top:1px solid
 .ai{background:#6b7cff;color:#fff;border-radius:6px;padding:7px;text-align:center;font-weight:600;margin-top:10px}
 .rows>div{display:grid;grid-template-columns:1fr 1.4fr;gap:32px;padding:26px 0;border-top:1px solid var(--line)}.rows>div:last-child{border-bottom:1px solid var(--line)}.rows h3{font-size:16px}.rows p{margin:0;color:var(--mute)}
 @media(max-width:760px){.rows>div{grid-template-columns:1fr;gap:8px}}
+.rows2{border-bottom:1px solid var(--line)}.svc{display:grid;grid-template-columns:1fr 1.15fr;gap:40px;padding:34px 0;border-top:1px solid var(--line)}.svc h3{font-size:clamp(16px,1.7vw,20px);margin-bottom:10px}.svc p{margin:0;color:var(--mute);max-width:44ch}.svc .best{margin-top:14px;font-size:14px}.svc .best b{color:var(--fg);font-weight:600}
+.svc ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px 24px;align-content:start;font-size:15px}.svc li{padding-left:22px;position:relative}.svc li:before{content:"";position:absolute;left:0;top:.75em;width:10px;height:1px;background:var(--ac)}
+.incT{font-size:15px;margin:56px 0 18px}.inc{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--card)}.inc div{padding:24px;border-right:1px solid var(--line)}.inc div:last-child{border:0}.inc b{display:block;font-weight:600;margin-bottom:6px}.inc p{margin:0;color:var(--mute);font-size:14px}
+@media(max-width:900px){.svc{grid-template-columns:1fr;gap:20px}.inc{grid-template-columns:1fr 1fr}.inc div{border-bottom:1px solid var(--line)}}@media(max-width:560px){.svc ul,.inc{grid-template-columns:1fr}}
 .why{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);border-radius:18px;overflow:hidden}@media(max-width:800px){.why{grid-template-columns:1fr}}
 .why div{padding:30px 26px;background:var(--card);border-right:1px solid var(--line)}.why div:last-child{border:0}.why h3{font-size:15px;margin-bottom:10px}.why p{margin:0;color:var(--mute);font-size:15px}
 .end{text-align:center;padding:120px 0}.end h2{font-size:clamp(22px,3.6vw,44px);max-width:20ch;margin:0 auto 14px}.end p{color:var(--mute);margin:0 0 30px}
@@ -154,14 +158,16 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--mute);font-si
 </div></section>
 
 <section id="offer" class="sand"><div class="wrap">
-  <div class="sh"><h2>What we build</h2><p>Core stacks and services for startups and growing enterprises.</p></div>
-  <div class="rows">
-    <div><h3>Websites and web apps</h3><p>High-speed, high-converting storefronts and platforms built on modern frameworks.</p></div>
-    <div><h3>Mobile app development</h3><p>Native and cross-platform apps crafted for fluid, intuitive user journeys.</p></div>
-    <div><h3>Custom enterprise software</h3><p>Tailor-made architectures engineered to scale with your business logic.</p></div>
-    <div><h3>Smart inventory systems</h3><p>Automated, data-driven systems that remove operational bottlenecks in real time.</p></div>
-    <div><h3>AI solutions and automation</h3><p>Machine learning models and automated workflows, including email and WhatsApp, to future-proof your product.</p></div>
+  <div class="sh"><h2>Services we provide</h2><p>From the first idea to launch and ongoing support, this is what we deliver.</p></div>
+  <div class="rows2">
+    <div class="svc"><div><h3>Websites and web apps</h3><p>Fast, mobile-friendly websites, online stores and web platforms that turn visitors into customers.</p><p class="best"><b>Best for:</b> Businesses that need a professional online presence or a customer-facing platform.</p></div><ul><li>Business and portfolio websites</li><li>Online stores, booking and enquiry flows</li><li>Customer portals, dashboards and admin panels</li><li>Quick loading and a search-friendly structure</li></ul></div>
+    <div class="svc"><div><h3>Mobile app development</h3><p>Android and iOS apps, native or cross-platform, designed around simple and smooth journeys.</p><p class="best"><b>Best for:</b> Companies whose customers or staff need the service on their phone.</p></div><ul><li>Android and iOS apps</li><li>Login, notifications and payments</li><li>Connected to your website or back-office system</li><li>Help with publishing on the app stores</li></ul></div>
+    <div class="svc"><div><h3>Custom enterprise software</h3><p>Software shaped around your own process, instead of forcing your team to fit a generic tool.</p><p class="best"><b>Best for:</b> Growing teams still running on spreadsheets, notebooks or tools that no longer fit.</p></div><ul><li>Multi-user systems with owner and staff roles</li><li>Order, billing and payment tracking</li><li>Reports with Excel and PDF export</li><li>Secure logins and a record of who changed what</li></ul></div>
+    <div class="svc"><div><h3>Smart inventory systems</h3><p>Live stock control for one shop or many, with every item tracked by barcode.</p><p class="best"><b>Best for:</b> Retail shops, showrooms and businesses with several branches.</p></div><ul><li>Barcode-based stock and sales tracking</li><li>Store-to-store transfers with approval</li><li>Shortage and write-off records</li><li>Daily cash closing that flags mismatches</li></ul></div>
+    <div class="svc"><div><h3>AI solutions and automation</h3><p>Automated messages, AI assistants and workflows that remove repetitive work from your day.</p><p class="best"><b>Best for:</b> Teams losing hours to follow-ups, manual updates and repeated data entry.</p></div><ul><li>WhatsApp and email updates triggered by orders and payments</li><li>AI assistants that answer questions or create records from chat</li><li>Automatic reminders and scheduled reports</li><li>Insights built from your own business data</li></ul></div>
   </div>
+  <h3 class="incT">Every project includes</h3>
+  <div class="inc"><div><b>Clear scope and price</b><p>We agree the work, timeline and cost before we start.</p></div><div><b>Regular demos</b><p>You see working progress at every step, not just at the end.</p></div><div><b>Secure by design</b><p>Role-based access, so each person sees only what they should.</p></div><div><b>Handover and support</b><p>Documentation, training and help after launch.</p></div></div>
 </div></section>
 
 <section><div class="wrap">
